@@ -1,0 +1,31 @@
+merchant_id,merchant_name,merchant_category,merchant_city,merchant_type,merchant_status
+M001,Kopi Kenangan,F&B,Jakarta,offline,aktif
+M002,Tokopedia,E-commerce,Jakarta,online,aktif
+M003,PLN,Utilities,Jakarta,hybrid,aktif
+M004,Garuda Indonesia,Travel,Jakarta,online,aktif
+M005,XXI Cinema,Entertainment,Jakarta,offline,aktif
+M006,Indomaret,Retail,Surabaya,offline,aktif
+M007,BPJS Kesehatan,Healthcare,Jakarta,online,aktif
+M008,Shopee,E-commerce,Jakarta,online,aktif
+M009,Spotify,Entertainment,Global,online,aktif
+M010,PDAM,Utilities,Bandung,hybrid,aktif
+M011,Janji Jiwa,F&B,Malang,offline,aktif
+M012,Traveloka,Travel,Jakarta,online,aktif
+M013,Halodoc,Healthcare,Jakarta,online,aktif
+M014,Alfamart,Retail,Bandung,offline,aktif
+M015,Netflix,Entertainment,Global,online,aktif
+M016,McDonald's,F&B,Surabaya,offline,aktif
+M017,Tiket.com,Travel,Jakarta,online,aktif
+M018,Steam,Entertainment,Global,online,aktif
+M019,Telkomsel,Utilities,Jakarta,hybrid,aktif
+M020,Kimia Farma,Healthcare,Surabaya,offline,aktif
+M021,GrabFood,F&B,Jakarta,hybrid,aktif
+M022,Blibli,E-commerce,Jakarta,online,aktif
+M023,Indosat Ooredoo,Utilities,Jakarta,hybrid,aktif
+M024,KAI,Travel,Jakarta,hybrid,aktif
+M025,GoRide,Transportation,Jakarta,hybrid,aktif
+M026,Starbucks,F&B,Bandung,offline,aktif
+M027,Matahari,Retail,Surabaya,offline,aktif
+M028,XL Axiata,Utilities,Jakarta,hybrid,aktif
+M029,Cinema 21,Entertainment,Malang,offline,aktif
+M030,IKEA,Retail,Jakarta,offline,aktif
