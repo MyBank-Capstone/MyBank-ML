@@ -1,0 +1,408 @@
+interaction_id,user_id,grup,rekomendasi_tipe,rekomendasi_item,tanggal_eksposur,clicked,converted,nominal_konversi,tanggal_konversi
+INT00004,100002,AI,kategori,Travel,2024-05-01 07:34,0,0,0,
+INT00176,100044,control,kategori,Entertainment,2024-05-01 17:52,0,0,0,
+INT00312,100075,AI,fitur_aplikasi,Beli Tiket Bioskop,2024-05-01 18:55,1,1,655677,2024-05-02 18:55
+INT00363,100089,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-02 03:00,1,0,0,
+INT00072,100020,control,merchant,Shopee,2024-05-02 03:34,0,0,0,
+INT00075,100021,control,kategori,E-commerce,2024-05-02 08:09,1,0,0,
+INT00301,100073,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-02 08:50,1,1,799421,2024-05-07 08:50
+INT00353,100086,AI,merchant,Matahari,2024-05-02 09:03,1,0,0,
+INT00244,100060,control,kategori,Travel,2024-05-02 09:43,1,0,0,
+INT00355,100086,AI,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-02 11:17,1,1,757485,2024-05-06 11:17
+INT00246,100060,control,merchant,XXI Cinema,2024-05-02 11:43,1,0,0,
+INT00015,100004,AI,merchant,Shopee,2024-05-02 13:23,0,0,0,
+INT00213,100053,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-02 14:07,0,0,0,
+INT00403,100099,control,merchant,IKEA,2024-05-02 18:20,0,0,0,
+INT00302,100073,control,merchant,XXI Cinema,2024-05-02 20:37,1,0,0,
+INT00070,100020,control,fitur_aplikasi,Langganan Streaming,2024-05-02 21:07,0,0,0,
+INT00374,100092,control,merchant,Tokopedia,2024-05-02 21:20,1,1,546756,2024-05-09 21:20
+INT00325,100079,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-03 01:20,0,0,0,
+INT00007,100002,AI,kategori,Travel,2024-05-03 02:37,0,0,0,
+INT00289,100070,AI,kategori,Entertainment,2024-05-03 02:54,1,0,0,
+INT00305,100074,AI,fitur_aplikasi,Transportasi Online (GoRide),2024-05-03 07:37,1,1,1456128,2024-05-10 07:37
+INT00093,100025,AI,kategori,Entertainment,2024-05-03 10:30,1,0,0,
+INT00368,100091,control,merchant,Halodoc,2024-05-03 11:36,0,0,0,
+INT00380,100094,control,kategori,Healthcare,2024-05-03 11:49,0,0,0,
+INT00239,100059,control,fitur_aplikasi,Langganan Streaming,2024-05-03 11:56,0,0,0,
+INT00248,100061,control,kategori,Transportation,2024-05-03 13:17,1,0,0,
+INT00299,100073,control,merchant,Alfamart,2024-05-03 14:02,0,0,0,
+INT00183,100046,AI,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-03 17:23,1,1,455281,2024-05-06 17:23
+INT00049,100014,control,kategori,Retail,2024-05-03 18:16,0,0,0,
+INT00150,100038,AI,merchant,PLN,2024-05-03 21:29,1,1,1720678,2024-05-07 21:29
+INT00216,100053,control,kategori,E-commerce,2024-05-03 22:32,0,0,0,
+INT00275,100067,control,kategori,Retail,2024-05-04 00:05,0,0,0,
+INT00384,100095,control,kategori,Entertainment,2024-05-04 00:33,0,0,0,
+INT00022,100006,AI,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-04 02:00,1,1,1131571,2024-05-08 02:00
+INT00101,100027,control,kategori,Healthcare,2024-05-04 02:49,0,0,0,
+INT00016,100004,AI,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-04 05:06,1,0,0,
+INT00236,100058,control,kategori,Entertainment,2024-05-04 06:12,1,1,502855,2024-05-05 06:12
+INT00050,100015,AI,merchant,Kimia Farma,2024-05-04 07:10,1,1,401420,2024-05-07 07:10
+INT00073,100021,control,fitur_aplikasi,Langganan Streaming,2024-05-04 08:52,0,0,0,
+INT00168,100042,control,kategori,Retail,2024-05-04 09:20,1,0,0,
+INT00012,100004,AI,fitur_aplikasi,Beli Tiket Bioskop,2024-05-04 11:11,1,1,1679089,2024-05-07 11:11
+INT00256,100063,AI,kategori,E-commerce,2024-05-04 11:58,1,0,0,
+INT00054,100016,control,kategori,Transportation,2024-05-04 13:21,0,0,0,
+INT00187,100047,control,kategori,Retail,2024-05-04 14:03,0,0,0,
+INT00270,100066,control,fitur_aplikasi,Belanja Online (VA),2024-05-04 14:26,1,0,0,
+INT00265,100065,AI,kategori,Retail,2024-05-04 15:47,1,0,0,
+INT00349,100085,control,fitur_aplikasi,Langganan Streaming,2024-05-04 19:52,1,0,0,
+INT00178,100045,control,kategori,Utilities,2024-05-04 21:34,0,0,0,
+INT00229,100056,AI,merchant,Cinema 21,2024-05-04 22:07,1,1,414642,2024-05-08 22:07
+INT00249,100061,control,merchant,Blibli,2024-05-04 23:02,1,0,0,
+INT00112,100030,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-04 23:25,0,0,0,
+INT00051,100015,AI,kategori,F&B,2024-05-04 23:31,1,1,1246354,2024-05-09 23:31
+INT00321,100078,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-05 00:14,0,0,0,
+INT00109,100029,control,kategori,F&B,2024-05-05 01:48,0,0,0,
+INT00276,100067,control,fitur_aplikasi,Beli Tiket Bioskop,2024-05-05 02:15,0,0,0,
+INT00087,100024,control,kategori,Retail,2024-05-05 02:47,1,0,0,
+INT00125,100033,control,merchant,Matahari,2024-05-05 04:58,1,0,0,
+INT00181,100045,control,merchant,KAI,2024-05-05 09:17,0,0,0,
+INT00020,100006,AI,kategori,Entertainment,2024-05-05 09:55,0,0,0,
+INT00153,100039,control,fitur_aplikasi,Bayar QRIS,2024-05-05 10:24,1,0,0,
+INT00043,100012,control,kategori,F&B,2024-05-05 12:39,0,0,0,
+INT00088,100024,control,kategori,E-commerce,2024-05-05 12:48,0,0,0,
+INT00196,100048,control,kategori,Retail,2024-05-05 17:12,0,0,0,
+INT00039,100011,control,kategori,F&B,2024-05-05 18:39,1,0,0,
+INT00138,100035,AI,kategori,Entertainment,2024-05-05 23:31,0,0,0,
+INT00057,100017,AI,kategori,Travel,2024-05-06 00:41,0,0,0,
+INT00261,100064,control,fitur_aplikasi,Langganan Streaming,2024-05-06 03:20,1,0,0,
+INT00117,100031,AI,merchant,PDAM,2024-05-06 05:56,1,0,0,
+INT00378,100093,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-06 07:41,0,0,0,
+INT00382,100094,control,merchant,Telkomsel,2024-05-06 08:02,1,0,0,
+INT00024,100007,AI,kategori,E-commerce,2024-05-06 09:58,1,1,156805,2024-05-10 09:58
+INT00231,100057,control,fitur_aplikasi,Transportasi Online (GoRide),2024-05-06 13:18,0,0,0,
+INT00201,100050,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-06 14:10,0,0,0,
+INT00259,100063,AI,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-06 14:11,1,0,0,
+INT00058,100017,AI,merchant,Spotify,2024-05-06 14:29,0,0,0,
+INT00208,100051,control,kategori,Utilities,2024-05-06 15:56,1,0,0,
+INT00165,100041,AI,merchant,Netflix,2024-05-06 16:51,1,1,1652826,2024-05-10 16:51
+INT00134,100035,AI,merchant,Janji Jiwa,2024-05-06 19:17,0,0,0,
+INT00335,100082,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-06 22:52,1,1,231043,2024-05-13 22:52
+INT00347,100084,control,merchant,Matahari,2024-05-07 00:39,0,0,0,
+INT00350,100085,control,kategori,Travel,2024-05-07 01:50,0,0,0,
+INT00030,100008,AI,kategori,Retail,2024-05-07 05:35,1,0,0,
+INT00371,100091,control,kategori,Transportation,2024-05-07 05:54,0,0,0,
+INT00346,100084,control,kategori,Retail,2024-05-07 06:20,0,0,0,
+INT00255,100062,control,fitur_aplikasi,Belanja & Lifestyle,2024-05-07 06:30,0,0,0,
+INT00237,100058,control,kategori,E-commerce,2024-05-07 07:35,0,0,0,
+INT00062,100018,AI,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-07 08:24,1,1,1704473,2024-05-14 08:24
+INT00036,100010,AI,merchant,Steam,2024-05-07 10:09,0,0,0,
+INT00055,100016,control,kategori,Travel,2024-05-07 10:19,0,0,0,
+INT00407,100100,control,kategori,Entertainment,2024-05-07 12:21,0,0,0,
+INT00396,100097,control,kategori,Travel,2024-05-07 15:56,1,0,0,
+INT00331,100081,control,merchant,Telkomsel,2024-05-07 16:25,0,0,0,
+INT00360,100088,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-07 20:08,1,1,452810,2024-05-13 20:08
+INT00018,100005,control,kategori,Entertainment,2024-05-07 22:27,1,1,638637,2024-05-11 22:27
+INT00393,100097,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-08 02:39,1,1,798831,2024-05-09 02:39
+INT00220,100054,AI,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-08 03:54,0,0,0,
+INT00264,100065,AI,fitur_aplikasi,Beli Tiket Bioskop,2024-05-08 04:04,1,1,563708,2024-05-10 04:04
+INT00141,100036,control,merchant,XXI Cinema,2024-05-08 05:49,0,0,0,
+INT00100,100027,control,merchant,XXI Cinema,2024-05-08 07:43,1,0,0,
+INT00330,100080,AI,merchant,Kimia Farma,2024-05-08 10:46,1,0,0,
+INT00177,100044,control,fitur_aplikasi,Langganan Streaming,2024-05-08 11:50,1,0,0,
+INT00066,100019,control,kategori,Utilities,2024-05-08 12:04,0,0,0,
+INT00338,100082,control,fitur_aplikasi,Langganan Streaming,2024-05-08 15:30,0,0,0,
+INT00399,100098,AI,merchant,Steam,2024-05-08 16:00,1,0,0,
+INT00357,100087,control,kategori,F&B,2024-05-08 16:10,0,0,0,
+INT00361,100088,control,merchant,XL Axiata,2024-05-08 18:03,0,0,0,
+INT00021,100006,AI,merchant,XXI Cinema,2024-05-08 18:23,0,0,0,
+INT00297,100072,AI,fitur_aplikasi,Transportasi Online (GoRide),2024-05-08 18:46,1,0,0,
+INT00294,100071,control,kategori,Utilities,2024-05-08 20:48,0,0,0,
+INT00067,100019,control,merchant,XL Axiata,2024-05-08 21:19,0,0,0,
+INT00107,100029,control,kategori,Utilities,2024-05-09 00:17,0,0,0,
+INT00324,100079,control,kategori,Utilities,2024-05-09 02:09,0,0,0,
+INT00222,100055,AI,kategori,Travel,2024-05-09 11:18,1,0,0,
+INT00402,100099,control,merchant,IKEA,2024-05-09 11:57,0,0,0,
+INT00198,100049,AI,kategori,Utilities,2024-05-09 12:38,1,0,0,
+INT00195,100048,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-10 05:31,0,0,0,
+INT00167,100042,control,merchant,Halodoc,2024-05-10 06:04,0,0,0,
+INT00317,100077,control,merchant,GoRide,2024-05-10 06:39,1,0,0,
+INT00135,100035,AI,kategori,Retail,2024-05-10 07:09,1,1,1669564,2024-05-14 07:09
+INT00040,100011,control,merchant,Shopee,2024-05-10 07:13,1,0,0,
+INT00136,100035,AI,merchant,Matahari,2024-05-10 10:09,1,1,783901,2024-05-10 10:09
+INT00114,100030,control,merchant,Shopee,2024-05-10 16:16,0,0,0,
+INT00358,100087,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-10 21:42,1,1,384827,2024-05-15 21:42
+INT00145,100037,AI,merchant,GoRide,2024-05-11 02:05,1,1,320262,2024-05-13 02:05
+INT00354,100086,AI,kategori,Travel,2024-05-11 05:36,0,0,0,
+INT00031,100009,AI,kategori,Utilities,2024-05-11 06:45,0,0,0,
+INT00128,100033,control,merchant,McDonald's,2024-05-11 07:08,1,1,343243,2024-05-15 07:08
+INT00086,100024,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-11 08:58,0,0,0,
+INT00395,100097,control,kategori,Entertainment,2024-05-11 09:18,1,0,0,
+INT00334,100081,control,kategori,Entertainment,2024-05-11 09:59,0,0,0,
+INT00364,100089,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-11 10:39,0,0,0,
+INT00047,100014,control,merchant,PDAM,2024-05-11 13:38,0,0,0,
+INT00263,100064,control,kategori,E-commerce,2024-05-11 18:09,1,1,585280,2024-05-12 18:09
+INT00389,100096,AI,kategori,Travel,2024-05-11 21:59,0,0,0,
+INT00348,100085,control,merchant,Janji Jiwa,2024-05-11 22:41,1,0,0,
+INT00202,100050,control,merchant,XXI Cinema,2024-05-11 22:51,0,0,0,
+INT00194,100048,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-12 04:06,0,0,0,
+INT00147,100037,AI,fitur_aplikasi,Bayar QRIS,2024-05-12 05:41,1,1,1952725,2024-05-19 05:41
+INT00010,100003,AI,fitur_aplikasi,Transportasi Online (GoRide),2024-05-12 07:13,0,0,0,
+INT00209,100052,control,merchant,Garuda Indonesia,2024-05-12 09:33,0,0,0,
+INT00115,100030,control,kategori,Retail,2024-05-12 13:55,1,0,0,
+INT00098,100027,control,fitur_aplikasi,Bayar Listrik (PLN),2024-05-12 14:44,1,1,349607,2024-05-15 14:44
+INT00130,100034,AI,fitur_aplikasi,Belanja Online (VA),2024-05-12 15:59,1,1,1179326,2024-05-19 15:59
+INT00185,100046,AI,kategori,Utilities,2024-05-12 16:35,1,1,636934,2024-05-19 16:35
+INT00129,100034,AI,merchant,PLN,2024-05-12 17:12,0,0,0,
+INT00037,100010,AI,kategori,Entertainment,2024-05-12 19:06,0,0,0,
+INT00166,100042,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-12 19:58,0,0,0,
+INT00091,100025,AI,fitur_aplikasi,Belanja Online (In-App),2024-05-12 20:15,1,0,0,
+INT00056,100016,control,merchant,Cinema 21,2024-05-12 20:36,1,1,619605,2024-05-16 20:36
+INT00001,100001,AI,kategori,Travel,2024-05-12 21:19,1,0,0,
+INT00097,100026,AI,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-13 00:03,0,0,0,
+INT00277,100067,control,merchant,Tokopedia,2024-05-13 00:38,0,0,0,
+INT00142,100036,control,fitur_aplikasi,Transportasi Online (GoRide),2024-05-13 01:09,1,0,0,
+INT00041,100012,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-13 03:02,0,0,0,
+INT00189,100047,control,fitur_aplikasi,Beli Tiket Bioskop,2024-05-13 03:23,0,0,0,
+INT00367,100090,AI,fitur_aplikasi,Belanja & Lifestyle,2024-05-13 20:07,0,0,0,
+INT00148,100038,AI,merchant,IKEA,2024-05-13 20:13,0,0,0,
+INT00076,100021,control,merchant,Telkomsel,2024-05-13 21:17,1,0,0,
+INT00069,100020,control,kategori,Healthcare,2024-05-13 22:51,1,0,0,
+INT00154,100039,control,kategori,F&B,2024-05-14 02:00,0,0,0,
+INT00059,100017,AI,kategori,Retail,2024-05-14 05:18,1,1,869072,2024-05-17 05:18
+INT00137,100035,AI,kategori,Retail,2024-05-14 07:35,1,1,762654,2024-05-16 07:35
+INT00269,100066,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-14 08:01,0,0,0,
+INT00221,100054,AI,kategori,F&B,2024-05-14 11:02,0,0,0,
+INT00242,100059,control,merchant,GoRide,2024-05-14 12:33,0,0,0,
+INT00332,100081,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-14 12:41,1,1,245085,2024-05-21 12:41
+INT00293,100071,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-14 16:17,0,0,0,
+INT00366,100090,AI,kategori,Entertainment,2024-05-14 20:55,1,0,0,
+INT00085,100023,control,merchant,PDAM,2024-05-14 22:16,1,0,0,
+INT00271,100066,control,merchant,Traveloka,2024-05-14 22:28,1,0,0,
+INT00400,100099,control,kategori,Healthcare,2024-05-14 22:39,1,0,0,
+INT00392,100096,AI,kategori,Travel,2024-05-14 23:17,1,0,0,
+INT00162,100041,AI,kategori,Retail,2024-05-14 23:34,1,0,0,
+INT00390,100096,AI,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-15 00:42,1,0,0,
+INT00404,100100,control,merchant,IKEA,2024-05-15 01:15,0,0,0,
+INT00307,100074,AI,kategori,Retail,2024-05-15 03:21,1,1,654499,2024-05-21 03:21
+INT00008,100003,AI,merchant,Steam,2024-05-15 05:34,0,0,0,
+INT00323,100078,control,merchant,Steam,2024-05-15 06:15,1,1,743024,2024-05-19 06:15
+INT00131,100034,AI,merchant,PLN,2024-05-15 06:48,1,0,0,
+INT00082,100023,control,fitur_aplikasi,Beli Tiket Bioskop,2024-05-15 08:27,0,0,0,
+INT00286,100069,AI,merchant,PLN,2024-05-15 08:37,0,0,0,
+INT00356,100087,control,kategori,Utilities,2024-05-15 10:32,0,0,0,
+INT00188,100047,control,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-15 12:32,0,0,0,
+INT00376,100093,control,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-15 12:37,0,0,0,
+INT00081,100022,control,merchant,KAI,2024-05-15 13:54,0,0,0,
+INT00089,100024,control,merchant,Blibli,2024-05-16 01:39,1,1,75611,2024-05-16 01:39
+INT00164,100041,AI,kategori,Retail,2024-05-16 02:03,1,1,345473,2024-05-19 02:03
+INT00032,100009,AI,kategori,Healthcare,2024-05-16 03:10,1,0,0,
+INT00234,100058,control,kategori,Transportation,2024-05-16 04:08,0,0,0,
+INT00048,100014,control,kategori,F&B,2024-05-16 05:22,1,0,0,
+INT00386,100095,control,kategori,Utilities,2024-05-16 05:32,0,0,0,
+INT00080,100022,control,kategori,E-commerce,2024-05-16 05:44,0,0,0,
+INT00052,100015,AI,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-16 06:03,1,1,1558636,2024-05-20 06:03
+INT00179,100045,control,kategori,Utilities,2024-05-16 08:56,0,0,0,
+INT00344,100084,control,merchant,XXI Cinema,2024-05-16 09:21,0,0,0,
+INT00173,100043,AI,fitur_aplikasi,Bayar QRIS,2024-05-16 10:42,0,0,0,
+INT00336,100082,control,merchant,Starbucks,2024-05-16 12:20,0,0,0,
+INT00099,100027,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-16 12:29,0,0,0,
+INT00274,100067,control,kategori,Healthcare,2024-05-16 14:36,0,0,0,
+INT00171,100043,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-16 14:53,0,0,0,
+INT00224,100055,AI,merchant,Telkomsel,2024-05-16 17:13,1,1,415831,2024-05-22 17:13
+INT00014,100004,AI,kategori,Healthcare,2024-05-16 17:49,0,0,0,
+INT00254,100062,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-16 22:17,1,0,0,
+INT00283,100069,AI,kategori,Utilities,2024-05-16 22:42,0,0,0,
+INT00035,100010,AI,merchant,XL Axiata,2024-05-17 00:58,1,1,1552948,2024-05-24 00:58
+INT00318,100077,control,merchant,XL Axiata,2024-05-17 02:43,1,0,0,
+INT00279,100068,control,kategori,F&B,2024-05-17 05:53,1,1,761332,2024-05-23 05:53
+INT00287,100070,AI,kategori,F&B,2024-05-17 08:21,0,0,0,
+INT00111,100029,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-17 09:12,0,0,0,
+INT00233,100057,control,merchant,Alfamart,2024-05-17 10:53,0,0,0,
+INT00245,100060,control,fitur_aplikasi,Top Up Game (Steam),2024-05-17 11:55,1,1,200210,2024-05-23 11:55
+INT00139,100036,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-17 12:57,1,1,550935,2024-05-18 12:57
+INT00170,100043,AI,kategori,Entertainment,2024-05-17 18:05,1,0,0,
+INT00113,100030,control,kategori,F&B,2024-05-17 23:44,1,1,733414,2024-05-17 23:44
+INT00240,100059,control,kategori,Travel,2024-05-18 01:41,1,0,0,
+INT00133,100034,AI,kategori,E-commerce,2024-05-18 01:53,1,1,677231,2024-05-21 01:53
+INT00238,100059,control,merchant,Alfamart,2024-05-18 03:58,0,0,0,
+INT00065,100019,control,merchant,Cinema 21,2024-05-18 08:52,1,1,157786,2024-05-23 08:52
+INT00223,100055,AI,merchant,Kopi Kenangan,2024-05-18 09:22,0,0,0,
+INT00339,100082,control,kategori,Retail,2024-05-18 13:10,0,0,0,
+INT00122,100032,AI,merchant,Alfamart,2024-05-18 13:58,1,0,0,
+INT00278,100068,control,kategori,Retail,2024-05-18 15:58,1,1,478625,2024-05-23 15:58
+INT00079,100022,control,kategori,Healthcare,2024-05-18 16:20,0,0,0,
+INT00372,100092,control,fitur_aplikasi,Belanja Online (VA),2024-05-18 17:57,0,0,0,
+INT00329,100080,AI,merchant,GoRide,2024-05-18 18:48,1,0,0,
+INT00215,100053,control,fitur_aplikasi,Transportasi Online (GoRide),2024-05-18 19:58,0,0,0,
+INT00116,100031,AI,kategori,Travel,2024-05-18 21:47,1,1,1718513,2024-05-19 21:47
+INT00064,100018,AI,kategori,F&B,2024-05-18 22:10,1,1,417272,2024-05-18 22:10
+INT00235,100058,control,kategori,Travel,2024-05-19 04:05,0,0,0,
+INT00083,100023,control,merchant,Alfamart,2024-05-19 09:44,0,0,0,
+INT00013,100004,AI,merchant,Netflix,2024-05-19 10:05,1,0,0,
+INT00006,100002,AI,merchant,PLN,2024-05-19 10:38,1,0,0,
+INT00381,100094,control,merchant,Tiket.com,2024-05-19 10:57,1,0,0,
+INT00191,100047,control,merchant,Shopee,2024-05-19 12:19,0,0,0,
+INT00190,100047,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-19 16:12,0,0,0,
+INT00300,100073,control,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-19 17:54,0,0,0,
+INT00311,100075,AI,merchant,GrabFood,2024-05-19 18:44,0,0,0,
+INT00045,100013,AI,fitur_aplikasi,Bayar QRIS,2024-05-19 22:52,1,0,0,
+INT00310,100075,AI,kategori,F&B,2024-05-19 22:54,0,0,0,
+INT00282,100068,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-20 00:39,1,0,0,
+INT00017,100005,control,kategori,Entertainment,2024-05-20 04:56,0,0,0,
+INT00262,100064,control,kategori,Transportation,2024-05-20 05:06,0,0,0,
+INT00192,100048,control,fitur_aplikasi,Bayar QRIS,2024-05-20 05:08,1,0,0,
+INT00118,100031,AI,kategori,Utilities,2024-05-20 06:08,0,0,0,
+INT00342,100083,AI,merchant,PDAM,2024-05-20 07:53,0,0,0,
+INT00319,100077,control,fitur_aplikasi,Top Up Game (Steam),2024-05-20 10:03,0,0,0,
+INT00228,100056,AI,fitur_aplikasi,Langganan Streaming,2024-05-20 11:55,1,1,1644013,2024-05-27 11:55
+INT00327,100079,control,merchant,PLN,2024-05-20 17:16,1,0,0,
+INT00343,100084,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-20 21:01,0,0,0,
+INT00068,100019,control,merchant,Cinema 21,2024-05-21 00:21,1,0,0,
+INT00383,100094,control,fitur_aplikasi,Belanja & Lifestyle,2024-05-21 01:08,0,0,0,
+INT00212,100052,control,merchant,Cinema 21,2024-05-21 03:22,0,0,0,
+INT00105,100028,AI,fitur_aplikasi,Langganan Streaming,2024-05-21 08:11,1,0,0,
+INT00121,100032,AI,merchant,XL Axiata,2024-05-21 09:24,0,0,0,
+INT00005,100002,AI,merchant,Indosat Ooredoo,2024-05-21 12:22,1,1,1751163,2024-05-26 12:22
+INT00046,100013,AI,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-21 12:50,1,0,0,
+INT00284,100069,AI,kategori,Transportation,2024-05-21 13:18,1,1,797739,2024-05-23 13:18
+INT00061,100017,AI,merchant,PLN,2024-05-21 13:30,0,0,0,
+INT00149,100038,AI,kategori,Healthcare,2024-05-21 15:19,1,1,462453,2024-05-25 15:19
+INT00092,100025,AI,merchant,GoRide,2024-05-21 15:19,1,0,0,
+INT00258,100063,AI,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-21 20:09,1,0,0,
+INT00232,100057,control,kategori,Healthcare,2024-05-21 21:04,0,0,0,
+INT00038,100011,control,merchant,Garuda Indonesia,2024-05-21 22:12,1,0,0,
+INT00326,100079,control,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-22 02:44,1,0,0,
+INT00123,100032,AI,kategori,Retail,2024-05-22 03:22,1,1,1514108,2024-05-26 03:22
+INT00298,100072,AI,merchant,Matahari,2024-05-22 05:41,1,0,0,
+INT00268,100066,control,fitur_aplikasi,Belanja & Lifestyle,2024-05-22 08:21,1,0,0,
+INT00161,100040,AI,kategori,Entertainment,2024-05-22 11:00,0,0,0,
+INT00250,100061,control,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-22 11:01,0,0,0,
+INT00394,100097,control,fitur_aplikasi,Top Up Game (Steam),2024-05-22 11:24,0,0,0,
+INT00095,100026,AI,kategori,E-commerce,2024-05-22 11:38,1,0,0,
+INT00143,100037,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-22 11:48,1,1,1049321,2024-05-26 11:48
+INT00182,100046,AI,kategori,Transportation,2024-05-22 12:55,1,1,210706,2024-05-22 12:55
+INT00214,100053,control,merchant,Netflix,2024-05-22 14:06,0,0,0,
+INT00225,100056,AI,merchant,McDonald's,2024-05-22 18:16,0,0,0,
+INT00273,100067,control,kategori,F&B,2024-05-22 19:58,0,0,0,
+INT00226,100056,AI,kategori,Transportation,2024-05-22 22:37,1,0,0,
+INT00011,100003,AI,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-23 00:15,1,1,926325,2024-05-28 00:15
+INT00210,100052,control,merchant,Halodoc,2024-05-23 00:31,1,0,0,
+INT00247,100060,control,fitur_aplikasi,Belanja Online (In-App),2024-05-23 00:32,1,0,0,
+INT00230,100057,control,kategori,Travel,2024-05-23 00:37,0,0,0,
+INT00406,100100,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-23 01:21,0,0,0,
+INT00217,100053,control,merchant,Garuda Indonesia,2024-05-23 01:47,1,1,720556,2024-05-23 01:47
+INT00159,100040,AI,kategori,F&B,2024-05-23 01:54,1,1,393105,2024-05-29 01:54
+INT00090,100025,AI,kategori,Transportation,2024-05-23 02:35,1,1,557760,2024-05-29 02:35
+INT00315,100076,control,merchant,PLN,2024-05-23 05:14,1,1,259159,2024-05-23 05:14
+INT00053,100016,control,merchant,Kopi Kenangan,2024-05-23 05:56,0,0,0,
+INT00186,100046,AI,kategori,Travel,2024-05-23 07:26,1,1,1837437,2024-05-30 07:26
+INT00257,100063,AI,fitur_aplikasi,Bayar QRIS,2024-05-23 07:39,0,0,0,
+INT00260,100063,AI,merchant,Starbucks,2024-05-23 08:03,0,0,0,
+INT00071,100020,control,merchant,BPJS Kesehatan,2024-05-23 08:17,1,0,0,
+INT00110,100029,control,merchant,XL Axiata,2024-05-23 09:55,1,1,393254,2024-05-26 09:55
+INT00094,100026,AI,merchant,Starbucks,2024-05-23 13:20,1,0,0,
+INT00124,100032,AI,kategori,Entertainment,2024-05-23 13:37,1,0,0,
+INT00102,100027,control,fitur_aplikasi,Belanja Online (VA),2024-05-23 14:50,0,0,0,
+INT00151,100038,AI,fitur_aplikasi,Transportasi Online (GoRide),2024-05-23 18:04,1,0,0,
+INT00157,100039,control,fitur_aplikasi,Transportasi Online (GoRide),2024-05-23 19:36,1,1,752685,2024-05-24 19:36
+INT00206,100051,control,kategori,Healthcare,2024-05-23 21:18,1,0,0,
+INT00398,100098,AI,fitur_aplikasi,Beli Tiket Bioskop,2024-05-23 22:23,1,0,0,
+INT00314,100076,control,kategori,Entertainment,2024-05-24 05:31,0,0,0,
+INT00391,100096,AI,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-24 07:00,1,0,0,
+INT00295,100072,AI,merchant,GrabFood,2024-05-24 07:55,0,0,0,
+INT00044,100013,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-24 08:49,1,1,272967,2024-05-26 08:49
+INT00200,100049,AI,merchant,Spotify,2024-05-24 09:23,0,0,0,
+INT00241,100059,control,merchant,Blibli,2024-05-24 09:47,1,1,633286,2024-05-29 09:47
+INT00029,100008,AI,merchant,KAI,2024-05-24 14:13,0,0,0,
+INT00285,100069,AI,merchant,Janji Jiwa,2024-05-24 14:32,1,0,0,
+INT00106,100028,AI,kategori,Healthcare,2024-05-24 16:49,1,1,210869,2024-05-30 16:49
+INT00140,100036,control,merchant,Halodoc,2024-05-24 20:55,1,0,0,
+INT00340,100083,AI,merchant,Shopee,2024-05-24 23:34,1,1,923662,2024-05-31 23:34
+INT00127,100033,control,fitur_aplikasi,Bayar QRIS,2024-05-24 23:54,0,0,0,
+INT00174,100044,control,kategori,Retail,2024-05-25 01:05,0,0,0,
+INT00158,100040,AI,fitur_aplikasi,Beli Tiket Bioskop,2024-05-25 01:15,1,0,0,
+INT00320,100078,control,merchant,McDonald's,2024-05-25 03:39,1,0,0,
+INT00306,100074,AI,merchant,Garuda Indonesia,2024-05-25 06:20,1,1,1230821,2024-05-28 06:20
+INT00199,100049,AI,fitur_aplikasi,Belanja Online (VA),2024-05-25 08:37,0,0,0,
+INT00060,100017,AI,kategori,Travel,2024-05-25 12:50,1,0,0,
+INT00026,100007,AI,kategori,Travel,2024-05-25 15:28,1,1,1749101,2024-05-27 15:28
+INT00025,100007,AI,kategori,Retail,2024-05-25 15:29,0,0,0,
+INT00169,100042,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-25 15:33,1,1,363058,2024-06-01 15:33
+INT00373,100092,control,merchant,Kimia Farma,2024-05-25 17:10,0,0,0,
+INT00074,100021,control,fitur_aplikasi,Pesan Tiket & Hotel,2024-05-25 17:30,0,0,0,
+INT00251,100061,control,merchant,GoRide,2024-05-25 20:55,1,0,0,
+INT00362,100089,control,merchant,McDonald's,2024-05-25 23:41,0,0,0,
+INT00375,100092,control,merchant,Kimia Farma,2024-05-26 00:36,1,0,0,
+INT00296,100072,AI,kategori,Transportation,2024-05-26 01:04,0,0,0,
+INT00345,100084,control,fitur_aplikasi,Bayar Air (PDAM),2024-05-26 02:46,1,0,0,
+INT00033,100009,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-26 03:01,1,1,284272,2024-05-31 03:01
+INT00155,100039,control,merchant,McDonald's,2024-05-26 04:38,0,0,0,
+INT00227,100056,AI,merchant,KAI,2024-05-26 07:32,1,1,215327,2024-05-26 07:32
+INT00308,100075,AI,kategori,Transportation,2024-05-26 09:54,0,0,0,
+INT00397,100098,AI,merchant,Blibli,2024-05-26 18:42,1,1,360130,2024-06-01 18:42
+INT00120,100032,AI,merchant,Traveloka,2024-05-26 20:41,1,1,1211076,2024-05-31 20:41
+INT00387,100095,control,fitur_aplikasi,Top Up Game (Steam),2024-05-26 21:08,1,0,0,
+INT00291,100070,AI,fitur_aplikasi,Layanan Kesehatan & Apotek,2024-05-26 22:10,1,0,0,
+INT00108,100029,control,merchant,Kimia Farma,2024-05-26 22:17,1,0,0,
+INT00204,100050,control,merchant,Spotify,2024-05-27 01:09,1,0,0,
+INT00023,100007,AI,kategori,Transportation,2024-05-27 01:36,0,0,0,
+INT00152,100038,AI,fitur_aplikasi,Belanja Online (VA),2024-05-27 05:07,1,1,233594,2024-06-02 05:07
+INT00180,100045,control,fitur_aplikasi,Langganan Streaming,2024-05-27 06:19,1,1,711820,2024-05-31 06:19
+INT00160,100040,AI,kategori,F&B,2024-05-27 08:10,1,1,1237246,2024-06-01 08:10
+INT00316,100077,control,kategori,Utilities,2024-05-27 08:40,0,0,0,
+INT00309,100075,AI,merchant,Tiket.com,2024-05-27 09:54,1,0,0,
+INT00313,100076,control,merchant,Traveloka,2024-05-27 12:09,1,0,0,
+INT00096,100026,AI,kategori,Utilities,2024-05-27 14:19,1,1,1956685,2024-06-03 14:19
+INT00370,100091,control,fitur_aplikasi,Beli Tiket Kereta (KAI),2024-05-27 16:37,1,0,0,
+INT00337,100082,control,kategori,Transportation,2024-05-27 16:47,0,0,0,
+INT00042,100012,control,merchant,Netflix,2024-05-27 17:10,1,0,0,
+INT00146,100037,AI,merchant,Indomaret,2024-05-27 19:07,1,1,1094774,2024-06-03 19:07
+INT00369,100091,control,merchant,Traveloka,2024-05-27 20:33,1,0,0,
+INT00034,100009,AI,merchant,Telkomsel,2024-05-27 21:21,1,1,298883,2024-05-27 21:21
+INT00203,100050,control,kategori,Utilities,2024-05-28 01:18,1,0,0,
+INT00385,100095,control,kategori,Healthcare,2024-05-28 05:28,1,0,0,
+INT00063,100018,AI,kategori,Utilities,2024-05-28 05:30,1,1,1599173,2024-05-30 05:30
+INT00003,100001,AI,kategori,F&B,2024-05-28 05:53,1,1,1292825,2024-06-03 05:53
+INT00359,100088,control,fitur_aplikasi,Belanja Online (VA),2024-05-28 06:22,1,1,178473,2024-06-01 06:22
+INT00333,100081,control,kategori,Utilities,2024-05-28 06:23,1,0,0,
+INT00377,100093,control,kategori,Entertainment,2024-05-28 07:51,1,0,0,
+INT00266,100065,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-28 08:47,0,0,0,
+INT00267,100065,AI,fitur_aplikasi,Bayar Listrik (PLN),2024-05-28 09:40,1,0,0,
+INT00218,100054,AI,merchant,XXI Cinema,2024-05-28 09:46,1,0,0,
+INT00184,100046,AI,kategori,Utilities,2024-05-28 11:21,1,1,517147,2024-05-29 11:21
+INT00028,100008,AI,merchant,Cinema 21,2024-05-28 13:01,0,0,0,
+INT00405,100100,control,merchant,PDAM,2024-05-28 13:43,0,0,0,
+INT00084,100023,control,merchant,Kimia Farma,2024-05-28 15:03,1,0,0,
+INT00292,100071,control,fitur_aplikasi,Bayar Listrik (PLN),2024-05-28 16:35,0,0,0,
+INT00172,100043,AI,kategori,Healthcare,2024-05-28 18:11,1,0,0,
+INT00401,100099,control,merchant,GrabFood,2024-05-28 20:54,1,0,0,
+INT00104,100028,AI,merchant,XL Axiata,2024-05-28 22:43,1,1,887691,2024-06-01 22:43
+INT00078,100022,control,merchant,Halodoc,2024-05-28 23:46,1,1,507239,2024-05-28 23:46
+INT00009,100003,AI,kategori,E-commerce,2024-05-29 00:39,1,1,1536769,2024-06-01 00:39
+INT00197,100049,AI,fitur_aplikasi,Bayar QRIS,2024-05-29 03:15,1,1,768891,2024-06-03 03:15
+INT00132,100034,AI,fitur_aplikasi,Bayar Listrik (PLN),2024-05-29 05:33,1,1,870911,2024-06-04 05:33
+INT00281,100068,control,fitur_aplikasi,Transportasi Online (GoRide),2024-05-29 06:56,0,0,0,
+INT00019,100005,control,kategori,Utilities,2024-05-29 07:51,0,0,0,
+INT00103,100028,AI,fitur_aplikasi,Top Up Game (Steam),2024-05-29 08:30,0,0,0,
+INT00205,100050,control,kategori,Travel,2024-05-29 09:03,0,0,0,
+INT00156,100039,control,fitur_aplikasi,Belanja & Lifestyle,2024-05-29 09:57,0,0,0,
+INT00219,100054,AI,kategori,Healthcare,2024-05-29 11:11,1,0,0,
+INT00211,100052,control,kategori,Utilities,2024-05-29 12:18,0,0,0,
+INT00175,100044,control,merchant,Tiket.com,2024-05-29 15:36,1,1,511694,2024-05-30 15:36
+INT00002,100001,AI,kategori,Transportation,2024-05-29 15:58,1,1,608517,2024-06-01 15:58
+INT00351,100086,AI,kategori,Retail,2024-05-29 17:30,0,0,0,
+INT00119,100031,AI,merchant,PLN,2024-05-29 17:50,1,1,363702,2024-06-02 17:50
+INT00252,100061,control,fitur_aplikasi,Bayar Listrik (PLN),2024-05-29 19:03,0,0,0,
+INT00272,100066,control,merchant,Kimia Farma,2024-05-29 20:09,0,0,0,
+INT00379,100094,control,kategori,F&B,2024-05-29 23:27,0,0,0,
+INT00288,100070,AI,kategori,Retail,2024-05-29 23:50,1,1,1893456,2024-05-31 23:50
+INT00365,100090,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-30 00:09,0,0,0,
+INT00027,100007,AI,kategori,F&B,2024-05-30 01:49,1,1,911225,2024-06-03 01:49
+INT00253,100062,control,merchant,Halodoc,2024-05-30 02:15,1,1,271494,2024-06-01 02:15
+INT00322,100078,control,merchant,Alfamart,2024-05-30 05:54,0,0,0,
+INT00280,100068,control,fitur_aplikasi,Bayar BPJS Kesehatan,2024-05-30 06:11,0,0,0,
+INT00352,100086,AI,merchant,Indomaret,2024-05-30 09:02,1,0,0,
+INT00077,100022,control,fitur_aplikasi,Belanja Online (In-App),2024-05-30 10:17,0,0,0,
+INT00193,100048,control,kategori,F&B,2024-05-30 10:30,0,0,0,
+INT00328,100080,AI,merchant,XL Axiata,2024-05-30 11:52,1,1,414723,2024-05-31 11:52
+INT00304,100074,AI,merchant,Steam,2024-05-30 13:23,1,1,754192,2024-06-02 13:23
+INT00163,100041,AI,merchant,Kopi Kenangan,2024-05-30 13:23,0,0,0,
+INT00243,100060,control,kategori,F&B,2024-05-30 13:31,0,0,0,
+INT00144,100037,AI,kategori,F&B,2024-05-30 14:16,0,0,0,
+INT00388,100095,control,kategori,Travel,2024-05-30 14:47,0,0,0,
+INT00207,100051,control,kategori,E-commerce,2024-05-30 14:47,1,1,536819,2024-06-03 14:47
+INT00126,100033,control,fitur_aplikasi,Beli Pulsa & Paket Data,2024-05-30 15:05,0,0,0,
+INT00290,100070,AI,merchant,Netflix,2024-05-30 15:23,1,0,0,
+INT00341,100083,AI,kategori,Retail,2024-05-30 16:58,0,0,0,
+INT00303,100074,AI,fitur_aplikasi,Bayar Air (PDAM),2024-05-30 20:55,1,1,686711,2024-06-02 20:55
