@@ -2,3 +2,7 @@ flask==3.0.3
 pandas==2.3.2
 scikit-learn==1.6.1
 numpy==2.2.4
+
+sqlalchemy==2.0.31
+pymysql==1.1.1
+cryptography==42.0.8
