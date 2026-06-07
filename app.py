@@ -30,83 +30,86 @@ app = Flask(__name__)
 # LOAD DATA & MODEL SAAT APP START
 # ==========================================
 
-df_account = pd.read_sql(
-    """
-    SELECT 
-        a.account_number AS no_rek, 
-        a.account_type, 
-        u.id AS user_id, 
-        u.name AS nama, 
-        u.date_of_birth AS tanggal_lahir, 
-        u.occupation AS pekerjaan, 
-        u.monthly_income_range, 
-        u.marital_status AS status_pernikahan
-    FROM accounts a
-    JOIN users u ON a.user_id = u.id
-    """,
-    engine
-)
-
-df_trx = pd.read_sql(
-    """
-    SELECT 
-        a.account_number AS no_rek,
-        CASE WHEN t.status = 'SUCCESS' THEN 'sukses' ELSE LOWER(t.status) END AS status,
-        t.merchant_name,
-        t.merchant_category AS kategori,
-        LOWER(t.type) AS channel
-    FROM transactions t
-    JOIN accounts a ON t.account_id = a.id
-    """,
-    engine
-)
-
 # Load clustering model
 model, preprocessor = load_model()
 
-# Prepare account features
-df_account = prepare_features(df_account)
-
-X = preprocessor.transform(
-    df_account[
-        [
-            "age",
-            "pekerjaan",
-            "income_encoded",
-            "status_pernikahan",
-            "account_type"
-        ]
-    ]
-)
-
-df_account["cluster"] = model.predict(X)
-
-cluster_labels = get_cluster_labels(df_account)
-
-df_account["cluster_label"] = (
-    df_account["cluster"].map(cluster_labels)
-)
-
-# Merge cluster ke transaksi
-df_trx_merged = df_trx.merge(
-    df_account[["no_rek", "cluster"]],
-    on="no_rek",
-    how="left"
-)
-
-# Top merchant per cluster (fallback CF)
-top_merchants = (
-    df_trx_merged[df_trx_merged["status"] == "sukses"]
-    .groupby(["cluster", "merchant_name"])
-    .size()
-    .reset_index(name="total_transaksi")
-    .sort_values(
-        ["cluster", "total_transaksi"],
-        ascending=[True, False]
+def load_fresh_data():
+    df_account = pd.read_sql(
+        """
+        SELECT 
+            a.account_number AS no_rek, 
+            a.account_type, 
+            u.id AS user_id, 
+            u.name AS nama, 
+            u.date_of_birth AS tanggal_lahir, 
+            u.occupation AS pekerjaan, 
+            u.monthly_income_range, 
+            u.marital_status AS status_pernikahan
+        FROM accounts a
+        JOIN users u ON a.user_id = u.id
+        """,
+        engine
     )
-    .groupby("cluster")
-    .head(3)
-)
+
+    df_trx = pd.read_sql(
+        """
+        SELECT 
+            a.account_number AS no_rek,
+            CASE WHEN t.status = 'SUCCESS' THEN 'sukses' ELSE LOWER(t.status) END AS status,
+            t.merchant_name,
+            t.merchant_category AS kategori,
+            LOWER(t.type) AS channel
+        FROM transactions t
+        JOIN accounts a ON t.account_id = a.id
+        """,
+        engine
+    )
+
+    # Prepare account features
+    df_account = prepare_features(df_account)
+
+    X = preprocessor.transform(
+        df_account[
+            [
+                "age",
+                "pekerjaan",
+                "income_encoded",
+                "status_pernikahan",
+                "account_type"
+            ]
+        ]
+    )
+
+    df_account["cluster"] = model.predict(X)
+
+    cluster_labels = get_cluster_labels(df_account)
+
+    df_account["cluster_label"] = (
+        df_account["cluster"].map(cluster_labels)
+    )
+
+    # Merge cluster ke transaksi
+    df_trx_merged = df_trx.merge(
+        df_account[["no_rek", "cluster"]],
+        on="no_rek",
+        how="left"
+    )
+
+    # Top merchant per cluster (fallback CF)
+    top_merchants = (
+        df_trx_merged[df_trx_merged["status"] == "sukses"]
+        .groupby(["cluster", "merchant_name"])
+        .size()
+        .reset_index(name="total_transaksi")
+        .sort_values(
+            ["cluster", "total_transaksi"],
+            ascending=[True, False]
+        )
+        .groupby("cluster")
+        .head(3)
+    )
+    
+    return df_account, df_trx, df_trx_merged, top_merchants, cluster_labels
 
 # ==========================================
 # HELPER FUNCTION
@@ -176,6 +179,9 @@ def recommend():
         }), 400
 
     user_id = int(user_id)
+
+    # Load fresh data dari database setiap kali ada request
+    df_account, df_trx, df_trx_merged, top_merchants, cluster_labels = load_fresh_data()
 
     if user_id not in df_account["user_id"].values:
         return jsonify({
