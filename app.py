@@ -163,6 +163,46 @@ def recommendation_history(user_id):
     })
 
 # ==========================================
+# DEBUG ENDPOINT
+# ==========================================
+
+@app.route("/debug_trx/<int:user_id>", methods=["GET"])
+def debug_trx(user_id):
+    try:
+        df_account, df_trx, df_trx_merged, _, _ = load_fresh_data()
+        
+        user_accounts = df_account[df_account["user_id"] == user_id]
+        if user_accounts.empty:
+            return jsonify({"error": f"No account found for user {user_id}"})
+            
+        no_rek = user_accounts.iloc[0]["no_rek"]
+        
+        user_trx = df_trx[df_trx["no_rek"] == no_rek]
+        
+        # Test CBF
+        from src.recommender import cbf_engine, FEATURE_CATALOG
+        cbf_test = cbf_engine(
+            user_id=no_rek,
+            df_trx=df_trx,
+            catalog=FEATURE_CATALOG,
+            item_name="feature",
+            channel_weight=0.6,
+            kategori_weight=0.4,
+            top_n=3
+        )
+        
+        return jsonify({
+            "no_rek": str(no_rek),
+            "total_trx_in_df": int(len(user_trx)),
+            "trx_data": user_trx.to_dict(orient="records"),
+            "all_trx_count": len(df_trx),
+            "cbf_test_is_empty": bool(cbf_test.empty),
+            "cbf_test_data": cbf_test.to_dict(orient="records") if not cbf_test.empty else []
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+# ==========================================
 # RECOMMENDATION ENDPOINT
 # ==========================================
 
