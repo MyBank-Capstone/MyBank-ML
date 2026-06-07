@@ -2,37 +2,44 @@ from sqlalchemy import text
 from src.database import engine
 
 def save_recommendation(
-    no_rek,
+    user_id,
     recommendation_type,
     recommendation_item,
     score,
     explanation
 ):
+    if "PROMO" in recommendation_type:
+        db_type = 'PROMO'
+    elif "FEATURE" in recommendation_type:
+        db_type = 'FEATURE'
+    else:
+        db_type = 'PRODUCT'
+
     with engine.begin() as conn:
         conn.execute(
             text("""
                 INSERT INTO recommendations
                 (
-                    no_rek,
-                    recommendation_type,
-                    recommendation_item,
-                    score,
-                    explanation
+                    user_id,
+                    type,
+                    title,
+                    description,
+                    reason
                 )
                 VALUES
                 (
-                    :no_rek,
-                    :recommendation_type,
-                    :recommendation_item,
-                    :score,
-                    :explanation
+                    :user_id,
+                    :type,
+                    :title,
+                    :description,
+                    :reason
                 )
             """),
             {
-                "no_rek": no_rek,
-                "recommendation_type": recommendation_type,
-                "recommendation_item": recommendation_item,
-                "score": float(score),
-                "explanation": explanation
+                "user_id": user_id,
+                "type": db_type,
+                "title": recommendation_item,
+                "description": f"Score: {score:.4f}",
+                "reason": str(explanation)
             }
         )

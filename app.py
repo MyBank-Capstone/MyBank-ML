@@ -31,25 +31,34 @@ app = Flask(__name__)
 # ==========================================
 
 df_account = pd.read_sql(
-    "SELECT * FROM accounts",
+    """
+    SELECT 
+        a.account_number AS no_rek, 
+        a.account_type, 
+        u.id AS user_id, 
+        u.name AS nama, 
+        u.date_of_birth AS tanggal_lahir, 
+        u.occupation AS pekerjaan, 
+        u.monthly_income_range, 
+        u.marital_status AS status_pernikahan
+    FROM accounts a
+    JOIN users u ON a.user_id = u.id
+    """,
     engine
 )
 
 df_trx = pd.read_sql(
-    "SELECT * FROM transactions",
+    """
+    SELECT 
+        a.account_number AS no_rek,
+        CASE WHEN t.status = 'SUCCESS' THEN 'sukses' ELSE LOWER(t.status) END AS status,
+        t.merchant_name,
+        t.merchant_category AS kategori,
+        LOWER(t.type) AS channel
+    FROM transactions t
+    JOIN accounts a ON t.account_id = a.id
+    """,
     engine
-)
-
-df_merchant = pd.read_sql(
-    "SELECT * FROM merchants",
-    engine
-)
-
-# Merge merchant_name ke transaksi
-df_trx = df_trx.merge(
-    df_merchant[["merchant_id", "merchant_name"]],
-    on="merchant_id",
-    how="left"
 )
 
 # Load clustering model
@@ -114,7 +123,7 @@ def log_recommendations(
 
     for _, row in df.iterrows():
         save_recommendation(
-            no_rek=user_id,
+            user_id=user_id,
             recommendation_type=recommendation_type,
             recommendation_item=row[item_column],
             score=row["score"],
@@ -168,15 +177,17 @@ def recommend():
 
     user_id = int(user_id)
 
-    if user_id not in df_account["no_rek"].values:
+    if user_id not in df_account["user_id"].values:
         return jsonify({
             "error": f"User {user_id} tidak ditemukan"
         }), 404
 
     user_row = (
-        df_account[df_account["no_rek"] == user_id]
+        df_account[df_account["user_id"] == user_id]
         .iloc[0]
     )
+
+    no_rek = user_row["no_rek"]
 
     cluster_id = int(user_row["cluster"])
 
@@ -195,7 +206,7 @@ def recommend():
     # ======================================
 
     hasil_cf_merchant = get_cf_recommendation(
-        target_user=user_id,
+        target_user=no_rek,
         df_trx=df_trx_merged,
         fallback_df=top_merchants,
         item_col="merchant_name",
@@ -212,7 +223,7 @@ def recommend():
     # ======================================
 
     hasil_cf_channel = get_cf_recommendation(
-        target_user=user_id,
+        target_user=no_rek,
         df_trx=df_trx_merged,
         fallback_df=None,
         item_col="channel",
@@ -229,7 +240,7 @@ def recommend():
     # ======================================
 
     hasil_cbf_fitur = cbf_engine(
-        user_id=user_id,
+        user_id=no_rek,
         df_trx=df_trx,
         catalog=FEATURE_CATALOG,
         item_name="feature",
@@ -248,7 +259,7 @@ def recommend():
     # ======================================
 
     hasil_cbf_promo = cbf_engine(
-        user_id=user_id,
+        user_id=no_rek,
         df_trx=df_trx,
         catalog=PROMO_CATALOG,
         item_name="merchant",

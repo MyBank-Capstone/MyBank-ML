@@ -7,7 +7,7 @@ def get_dashboard_stats():
     with engine.connect() as conn:
 
         total_users = conn.execute(
-            text("SELECT COUNT(*) FROM accounts")
+            text("SELECT COUNT(*) FROM users")
         ).scalar()
 
         total_transactions = conn.execute(
@@ -15,7 +15,7 @@ def get_dashboard_stats():
         ).scalar()
 
         total_interactions = conn.execute(
-            text("SELECT COUNT(*) FROM interactions")
+            text("SELECT (SELECT COUNT(*) FROM feature_clicks) + (SELECT COUNT(*) FROM recommendation_clicks)")
         ).scalar()
 
         total_recommendations = conn.execute(
@@ -24,13 +24,11 @@ def get_dashboard_stats():
 
         top_merchants = conn.execute(
             text("""
-                SELECT m.merchant_name,
+                SELECT merchant_name,
                        COUNT(*) AS total
-                FROM transactions t
-                JOIN merchants m
-                    ON t.merchant_id = m.merchant_id
-                WHERE t.status = 'sukses'
-                GROUP BY m.merchant_name
+                FROM transactions
+                WHERE status = 'SUCCESS' AND merchant_name IS NOT NULL
+                GROUP BY merchant_name
                 ORDER BY total DESC
                 LIMIT 5
             """)

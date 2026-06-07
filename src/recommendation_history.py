@@ -9,14 +9,14 @@ def get_recommendation_history(user_id):
         rows = conn.execute(
             text("""
                 SELECT
-                    recommendation_id,
-                    recommendation_type,
-                    recommendation_item,
-                    score,
-                    explanation,
+                    id AS recommendation_id,
+                    type AS recommendation_type,
+                    title AS recommendation_item,
+                    description AS score_info,
+                    reason AS explanation,
                     created_at
                 FROM recommendations
-                WHERE no_rek = :user_id
+                WHERE user_id = :user_id
                 ORDER BY created_at DESC
             """),
             {

@@ -16,8 +16,18 @@ def prepare_features(df_account):
     df['tanggal_lahir'] = pd.to_datetime(df['tanggal_lahir'], errors='coerce')
     df['age'] = datetime.now().year - df['tanggal_lahir'].dt.year
 
+    # Misal di db kolom age masil null, fill ini dulu aman kan? soalnya request data ini masih optional di be ku
+    df['age'] = df['age'].fillna(30)
+
     income_mapping = {'<5 juta': 1, '5-10 juta': 2, '10-20 juta': 3, '>20 juta': 4}
     df['income_encoded'] = df['monthly_income_range'].map(income_mapping)
+
+    # Ini juga fill dulu kalau masil null
+    df['income_encoded'] = df['income_encoded'].fillna(1)
+    if 'pekerjaan' in df.columns:
+        df['pekerjaan'] = df['pekerjaan'].fillna('Lainnya')
+    if 'status_pernikahan' in df.columns:
+        df['status_pernikahan'] = df['status_pernikahan'].fillna('single')
 
     return df
 
